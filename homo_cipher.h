@@ -6,21 +6,21 @@
 #include <ctime>
 
 class homo_cipher{
-    std::size_t letter_entrance[26]; //times letter appears in the plainText
+    std::size_t letter_entrance[26]; //times letter appears in the plain text
 
-    std::vector <std::size_t> letter_key[26]; //numbers which are code letters
+    std::vector <std::size_t> letter_key[26]; //substitution alphabet
 
 public:
 
-    homo_cipher(); //Done
+    homo_cipher(); 
 
-    homo_cipher(QString plainText); //generates key ||Done
+    homo_cipher(QString plainText); //generates key 
 
-    QString get_key(); //generates key representation in file  ||Done
+    QString get_key(); //generates key representation in file 
 
-    void set_key(QString keyText);
+    void set_key(QString keyText);  //key setter
 
-    QString encrypt(QString plainText);
+    QString encrypt(QString plainText); 
 
     QString decrypt(QString outText);
 
