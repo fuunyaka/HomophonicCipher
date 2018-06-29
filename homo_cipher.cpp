@@ -8,7 +8,6 @@ homo_cipher::homo_cipher()
 
 }
 
-    //сгенерировать n ключей для entrance[i]==n, записать их в letter_key[i] ==>QString
 homo_cipher::homo_cipher(QString plainText){
     for (std::size_t i=0; i<26; ++i){
         letter_entrance[i]=0;
